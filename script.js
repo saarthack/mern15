@@ -1,17 +1,11 @@
-var cursor = document.querySelector('#cursor')
-var h1 = document.querySelector('h1')
-
-
-document.addEventListener('mousemove', function (dets) {
-    cursor.style.left = dets.x + 'px'
-    cursor.style.top = dets.y + 'px'
-})
-
-
-h1.addEventListener('mouseenter', function () {
-    cursor.style.scale = 3
-})
-h1.addEventListener('mouseleave', function () {
-    cursor.style.scale = 1
-
+document.querySelectorAll('.images img').forEach(function (elem) {
+    elem.addEventListener('click', function () {
+        var src = elem.getAttribute('src');
+        var img = document.createElement('img')
+        img.setAttribute('src', src)
+        img.style.left = Math.random()*90+'%'
+        img.style.top = Math.random()*80+'%'
+        img.style.rotate = Math.random()*360+'deg'
+        document.querySelector('.playground').appendChild(img)
+    })
 })
