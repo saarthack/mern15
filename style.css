@@ -10,34 +10,41 @@ body {
     width: 100%;
 }
 
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(166, 233, 255);    
+    padding: 40px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card{
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    gap: 12px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
 
 img{
-    height: 150px;
-}
-body{
-    padding: 30px;
-}
-
-.playground{
-    height: 80%;
-    width: 100%;
-    margin-top: 20px;
-    background-color: rgb(244, 244, 244);
-    border-radius: 10px;
-    border: 5px solid black;
-    position: relative;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
-.images{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.card h3{
+    font-size: 25px;
+    color: royalblue;
 }
-
-img:active{
-    scale: 0.95;
-}
-
-.playground img{
-    position: absolute;
+.card p{
+    color: #999;
+    font-weight: 600;
 }
