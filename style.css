@@ -9,3 +9,85 @@ body {
     height: 100%;
     width: 100%;
 }
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: lightseagreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#card{
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#card h2{
+    padding: 10px;
+    font-size: 30px;
+}
+
+#allStatus{
+    height: 83%;
+    width: 100%;
+    overflow: auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.539);
+}
+
+.status{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.539);
+}
+
+.status img{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgb(0, 255, 0);
+
+    pointer-events: none;
+}
+
+.status h3{
+    font-weight: 400;
+    font-size: 18px;
+    pointer-events: none;
+
+}
+
+#full{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: none;
+    /* background-color: darkcyan; */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: white;
+
+}
+
+#outer{
+    height: 6px;
+    width: 100%;
+    background-color: gainsboro;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+#inner{
+    height: 100%;
+    width: 0%;
+    background-color: green;
+    border-radius: 50px;
+}
